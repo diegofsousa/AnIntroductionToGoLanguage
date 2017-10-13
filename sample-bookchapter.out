@@ -1,0 +1,40 @@
+\BOOKMARK [1][-]{section.1.1}{Introdu\347\343o}{}% 1
+\BOOKMARK [2][-]{subsection.1.1.1}{Porque Go}{section.1.1}% 2
+\BOOKMARK [2][-]{subsection.1.1.2}{Go atualmente}{section.1.1}% 3
+\BOOKMARK [1][-]{section.1.2}{Instalando e configurando o Go}{}% 4
+\BOOKMARK [2][-]{subsection.1.2.1}{Windows}{section.1.2}% 5
+\BOOKMARK [2][-]{subsection.1.2.2}{Linux}{section.1.2}% 6
+\BOOKMARK [1][-]{section.1.3}{Estrutura b\341sica e sintaxe}{}% 7
+\BOOKMARK [2][-]{subsection.1.3.1}{Hello World}{section.1.3}% 8
+\BOOKMARK [2][-]{subsection.1.3.2}{Vari\341veis}{section.1.3}% 9
+\BOOKMARK [3][-]{subsubsection.1.3.2.1}{Entrada e sa\355da com fmt}{subsection.1.3.2}% 10
+\BOOKMARK [2][-]{subsection.1.3.3}{Estrutura de sele\347\343o if/else}{section.1.3}% 11
+\BOOKMARK [2][-]{subsection.1.3.4}{Switch case}{section.1.3}% 12
+\BOOKMARK [1][-]{section.1.4}{Cole\347\365es de dados}{}% 13
+\BOOKMARK [2][-]{subsection.1.4.1}{Arrays}{section.1.4}% 14
+\BOOKMARK [2][-]{subsection.1.4.2}{Slices}{section.1.4}% 15
+\BOOKMARK [2][-]{subsection.1.4.3}{Maps}{section.1.4}% 16
+\BOOKMARK [2][-]{subsection.1.4.4}{Loops}{section.1.4}% 17
+\BOOKMARK [1][-]{section.1.5}{Fun\347\365es}{}% 18
+\BOOKMARK [2][-]{subsection.1.5.1}{Fun\347\365es b\341sicas}{section.1.5}% 19
+\BOOKMARK [2][-]{subsection.1.5.2}{Retorno definido}{section.1.5}% 20
+\BOOKMARK [2][-]{subsection.1.5.3}{Fun\347\365es de argumentos vari\341veis}{section.1.5}% 21
+\BOOKMARK [2][-]{subsection.1.5.4}{Fun\347\365es an\364nimas}{section.1.5}% 22
+\BOOKMARK [2][-]{subsection.1.5.5}{Defer}{section.1.5}% 23
+\BOOKMARK [1][-]{section.1.6}{Tipos de dados}{}% 24
+\BOOKMARK [2][-]{subsection.1.6.1}{Criando novos tipos}{section.1.6}% 25
+\BOOKMARK [2][-]{subsection.1.6.2}{Structs}{section.1.6}% 26
+\BOOKMARK [3][-]{subsubsection.1.6.2.1}{Estruturas avan\347adas}{subsection.1.6.2}% 27
+\BOOKMARK [3][-]{subsubsection.1.6.2.2}{Interfaces}{subsection.1.6.2}% 28
+\BOOKMARK [1][-]{section.1.7}{Tratamento de erros}{}% 29
+\BOOKMARK [1][-]{section.1.8}{Concorr\352ncia}{}% 30
+\BOOKMARK [2][-]{subsection.1.8.1}{Goroutines}{section.1.8}% 31
+\BOOKMARK [2][-]{subsection.1.8.2}{Waitgroups}{section.1.8}% 32
+\BOOKMARK [2][-]{subsection.1.8.3}{Channels}{section.1.8}% 33
+\BOOKMARK [1][-]{section.1.9}{Pacotes Go}{}% 34
+\BOOKMARK [2][-]{subsection.1.9.1}{Criando um pacote Go}{section.1.9}% 35
+\BOOKMARK [3][-]{subsubsection.1.9.1.1}{Time}{subsection.1.9.1}% 36
+\BOOKMARK [3][-]{subsubsection.1.9.1.2}{Io/util e Os}{subsection.1.9.1}% 37
+\BOOKMARK [2][-]{subsection.1.9.2}{Pacotes externos}{section.1.9}% 38
+\BOOKMARK [1][-]{section.1.10}{Constru\355ndo uma API REST em Go}{}% 39
+\BOOKMARK [1][-]{section.1.11}{References}{}% 40
