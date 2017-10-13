@@ -81,35 +81,42 @@ No Brasil não é diferente, muitas companhias estão aderindo ao Go. Entre as e
 
 \section{Instalando e configurando o Go}
 
-Neste topico estão disponiveis os passos para a instalação em dois SO's (Windows e Linux (Baseado em Debian)) dinstintos todos com suporte a instalação da linguagem Go em seu links ofciais que pussuem instruções faceis para seu uso desde a instalação de pacotes a configuração de variaveis de ambiente.
+Neste tópico é apresentado o passo a passo para a instalação da Linguagem Go nos Sistemas Operacionais Linux e Windows.
+
+\subsection{Linux}
+
+Para efetuar a instalação no ambiente Linux, vá até o site oficial da linguagem na seção de \textit{downloads}\footnote{\label{note1}\url{https://golang.org/dl/}} e escolha a opção \textbf{Linux}. Após fazer o \textit{download}, navegue pelo terminal até a pasta onde está o arquivo compactado e descompacte-o com o comando \texttt{sudo tar -zxvf "nome\_do\_arquivo".tar.gz}. Com a extração concluída, mova o arquivo para o diretório \texttt{/usr/local} com o comando \texttt{sudo mv go /usr/local}.
+
+Agora edite o arquivo \texttt{/etc/profile} adicionando as variáveis de ambiente para o Go:
+
+\noindent\texttt{export GOPATH=\$HOME/GO}\\
+\texttt{export GOROOT=/usr/local/go}\\
+\texttt{export PATH=\$PATH:\$GOROOT/bin:\$GOPATH/bin}
+
+Crie uma pasta dentro do diretório \texttt{\$HOME}\footnote{Para descobrir onde fica o diretório \texttt{\$HOME} execute o comando \texttt{echo \$HOME} no terminal.} com o nome "GO", de acordo com a variável de ambiente descrita em \texttt{GOPATH}, e execute o comando \texttt{source /etc/profi\\le} para finalizar a instalação.
+
+Estenda a pasta \texttt{\$GOPATH} criando as pastas \textbf{pkg}, \textbf{bin} e \textbf{src}. Preferencialmente crie seus programas dentro do diretório \texttt{\$GOPATH/src}.
+
+Por último, verifique a instalação executando o comando \texttt{go version}. O retorno deve ser algo como:
+
+\noindent\texttt{go version go1.8.3 linux/amd64}
+
 
 \subsection{Windows}
 
-O Go pode ser instalado de duas formas no Windows, mas vamos aqui descrever a forma mais coniavel e recomendavel: que pode ser feito pelo instalador de automático que esta disponivel nesse link \url{https://golang.org/doc/install?download=go1.9.1.windows-amd64.msi}.  Apos feito o download o executavel por padão é salvo na pasta de download do seu computador em \texttt{C:\char`\\Dowloads\char`\\}.
+Para o Windows, a instalação do Go pode ser feita através do mesmo \textit{link}\textsuperscript{\ref{note1}}. Selecione a opção Windows e faça o \textit{download}. No ato da instalação é importante que os arquivos sejam inseridos no diretório \texttt{C:\char`\\Go}. Feita a instalação, é necessário configurar as variáveis de ambiente. No Windows é possível encontrá-la em dois lugares:
 
-Para que ele possa fazer a instalação dos pacotes necessarios para a linguagem basta clicar com o botão direito do mouse no executavel e com o botão esquerdo clicar em instalar. os binarios serão descarregados direto no seu disco disco local principal com o caminho \texttt{C:\char`\\Go}.
+\begin{itemize}
+	\item "Painel de Controle" $\rightarrow$ "Sistema" $\rightarrow$ "Avançado" $\rightarrow$ "Variáveis de ambiente";
+	\item "Configurações avançadas do sistema" $\rightarrow$ "Variáveis de ambiente".
+\end{itemize}
 
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=0.5\linewidth]{diretorio.png}
-	\caption{Executavel no Windows}
-	\label{fig:gf}
-\end{figure}
+Na maioria dos casos, a variável \texttt{GOROOT} já está automaticamente adicionada. Caso contrário você deve adicioná-la apontando-a para o diretório \texttt{C:\char`\\Go}. Crie uma pasta contendo as pastas \textbf{bin}, \textbf{pkg} e \textbf{src} para ser seu diretório de trabalho e adicione mais duas variáveis: \texttt{PATH} para o caminho \texttt{C:\char`\\Go\char`\\bin} e a varíavel \texttt{GOPATH} direcionada para seu diretório de trabalho.
 
-O seguinte passo será a configuração da variavel ambiente para a chamada do compilador instalado no seu computador. Para isso faz-se necessario que sejá configurado o caminho correto no seu sistema. Basta clicar como botão direito do mouse em seu diretorio principal da sua maquina, apos isso clique em propiedades. Fazendo esse passos aparecera as configurações de sistema, clicando em configurações avançadas aparecera uma nova janela em que uma das opções está as variaveis de ambiente e clique novamente:
+Desenvolva seus programas dentro da pasta \texttt{GOPATH/src}. Por último visualize sua instalação usando \texttt{go version} no Prompt de Comando ou CMD. A saída deve ser essa:
 
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=0.5\linewidth]{ambiente.png}
-	\caption{Variavel Ambiente no Windows}
-	\label{fig:gf}
-\end{figure}
+\noindent\texttt{go version go1.8.3 windows/amd64}
 
-Para finalizar todo o processo de configuração da variavel você deve indicar o caminho especifico de onde foi instalado. Para isso deve-se escrever o caminho \texttt{C:\char`\\Go;}. É importante por o ponto e virgula no final para indicar aonde deve ser parado a busca do ser complidador do linguagem, isso podera evitar alguns erros de execução em relação ao tempo. por ultimo basta abrir seu prompt de comando e digitar:
-
-
-\texttt{C:\char`\\>go version} e clicar entre para aparecer a seguinte resposta: \texttt{go version go1.3 windows/amd64}, isto é a versão do seu Go. 
-\subsection{Linux}
 
 \section{Estrutura básica e sintaxe}
 
