@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2017.8.24)  13 OCT 2017 14:36
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2017.8.24)  15 OCT 2017 07:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -642,47 +642,35 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [2]
-Overfull \hbox (1.69046pt too wide) in paragraph at lines 96--97
-\T1/ptm/m/n/12 var-iável de am-bi-ente de-scrita em \T1/pcr/m/n/12 GOPATH\T1/pt
-m/m/n/12 , e ex-e-cute o co-mando \T1/pcr/m/n/12 source /etc/profi 
+Overfull \hbox (6.15285pt too wide) in paragraph at lines 96--97
+\T1/pcr/m/n/12 /etc/profile \T1/ptm/m/n/12 para fi-nalizar a in-sta-lação. O pr
+óx-imo passo é es-ten-der a pasta \T1/pcr/m/n/12 $GOPATH
  []
 
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 110.
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 108.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 110.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 108.
  [3] [4]
 LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <12> not available
-(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 168.
+(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 161.
  [5]
-Underfull \hbox (badness 10000) in paragraph at lines 199--202
+Underfull \hbox (badness 10000) in paragraph at lines 192--195
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 205--206
-
- []
-
-
-Overfull \hbox (2.16776pt too wide) in paragraph at lines 225--226
+Overfull \hbox (2.16776pt too wide) in paragraph at lines 222--223
 \T1/ptm/m/n/12 es-pe-cial-mente em ca-sos de Menus e es-tru-turas de de-cisões 
 com muitos opções. O \T1/pcr/m/n/12 switch
  []
 
 [6] [7] [8]
-Overfull \hbox (34.44864pt too wide) in paragraph at lines 333--334
-\T1/ptm/m/n/12 taman-hos pre-definidos au-men-tando a per-for-mace e evi-tando 
-prob-le-mas de alo-cação. Recomenda-
- []
-
-
-Overfull \hbox (11.62648pt too wide) in paragraph at lines 355--356
-\T1/ptm/m/n/12 Teresina, e logo apos foi es-crito o seguinte codigo: \T1/pcr/m/
-n/12 capitais["PR"] = "Curitiba"\T1/ptm/m/n/12 ,
+Overfull \hbox (5.20848pt too wide) in paragraph at lines 353--354
+\T1/pcr/m/n/12 map[SEP:Sociedade Esportiva de Picos PEC:Piaui Esporte Clube
  []
 
 [9] [10] [11]
@@ -723,26 +711,32 @@ Underfull \hbox (badness 10000) in paragraph at lines 699--710
  []
 
 [17] [18]
-Underfull \hbox (badness 1237) in paragraph at lines 796--800
+Overfull \hbox (12.1045pt too wide) in paragraph at lines 774--776
+\T1/ptm/m/n/12 sem a ne-ces-si-dade de blo-quear prin-ci-pal uma de-las. A segu
+ir está uma função \T1/pcr/m/n/12 imprimir()
+ []
+
+[19]
+Underfull \hbox (badness 1237) in paragraph at lines 830--834
 []\T1/ptm/m/n/12 Dyer, S., Mar-tin, J. and Zu-lauf, J. (1995) ``Mo-tion Cap-tur
 e White Pa-per'',
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 809.
-[19]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 809.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 843.
+[20]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 843.
  (./sample-bookchapter.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 809.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 809.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 843.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 843.
 Package rerunfilecheck Info: File `sample-bookchapter.out' has not changed.
-(rerunfilecheck)             Checksum: 355DBAB4D1E554E2182E0E70256698DD;2637.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 809.
+(rerunfilecheck)             Checksum: 2A933E529BC054FA253CEE29B9DED132;2585.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 843.
  ) 
 Here is how much of TeX's memory you used:
- 8413 strings out of 494981
- 118839 string characters out of 6179614
+ 8435 strings out of 494981
+ 119157 string characters out of 6179614
  208618 words of memory out of 5000000
- 11104 multiletter control sequences out of 15000+600000
+ 11112 multiletter control sequences out of 15000+600000
  63510 words of font info for 89 fonts, out of 8000000 for 9000
  16 hyphenation exceptions out of 8191
  29i,8n,40p,784b,1777s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -753,10 +747,10 @@ type1/urw/courier/ucrro8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/ti
 mes/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb
 ></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/te
 xlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on sample-bookchapter.pdf (19 pages, 155337 bytes).
+Output written on sample-bookchapter.pdf (20 pages, 153627 bytes).
 PDF statistics:
- 732 PDF objects out of 1000 (max. 8388607)
- 697 compressed objects within 7 object streams
- 415 named destinations out of 1000 (max. 500000)
- 321 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 748 PDF objects out of 1000 (max. 8388607)
+ 711 compressed objects within 8 object streams
+ 429 named destinations out of 1000 (max. 500000)
+ 313 words of extra memory for PDF output out of 10000 (max. 10000000)
 
