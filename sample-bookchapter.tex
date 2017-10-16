@@ -499,6 +499,7 @@ A saída deste código é:
 \texttt{DIEGO FERNANDO}\\
 
 \subsection{Defer}
+\label{defer}
 
 O \texttt{defer} define uma função que sempre será executada ao fim de uma rotina atual. O comando é ideal para programas em que se usa I/O onde deve haver abertura e fechamento de arquivos ou conexões, pois garante a execução de determinada função ao final. O exemplo a seguir apresenta a função \texttt{defer} que imprime a string \texttt{Segunda acao} logo após a impressão de \texttt{Primeira acao}:
 
@@ -772,14 +773,15 @@ Nas instâncias acima, \texttt{time\_futebol} e \texttt{time\_basquete} tem a me
 As goroutines são similares as threads comuns, porém elas são gerenciadas pelo ambiente de execução, ou seja, a linguagem decide quando elas iram ser interligadas as threads principais do sistema. Por esse fator elas se tornam extremamente leves por ter um controle sobre qual execução realmetente é necessaria estar sendo executada pelo SO.
 
 Para dar inico a uma goroutines se utiliza uma palavra-cahve \texttt{go} depois se chama uma função; isso permite que a execução da thread principal rode em parelelo a função sem a necessidade de bloquear principal uma delas.
-A seguir está uma função \texttt{imprimir()} recebendo um número inteiro imprimindo três vezes a cada 200 milissegundos:
+A seguir está uma função \texttt{sequencia()} recebendo um número inteiro imprimindo uma sequencia que vai do 0 até o valor passado como argumento:
 
 \begin{lstlisting}
-func imprimir(n int) {
-	for i := 0; i < 10; i++ {
-		fmt.Printf("%d ", n)
+func sequencia(n int) {
+	for i := 0; i < n; i++ {
+		fmt.Printf("%d ", i+1)
 		time.Sleep(200 * time.Millisecond)
 	}
+	fmt.Printf(" ...Sequencia de %d terminou... ", n)
 }
 \end{lstlisting}
 
@@ -787,25 +789,107 @@ A função \texttt{main()} a seguir chama a função \texttt{imprimir()} instanc
 
 \begin{lstlisting}
 func main() {
-	imprimir(5)
-	imprimir(10)
+	sequencia(5)
+	sequencia(10)
 }
 \end{lstlisting}
 
-Ao executar a função \texttt{main()} a saida do código será: \texttt{5 5 5 5  5 5 5 5 5 5 10 10 10 10 10 10 10 10 10 10 }, mas agora façamos diferente; vamos usar a palavra-chave \texttt{go} para um das chamadas da funções:
+Ao executar a função \texttt{main()} a saida do código é:
+
+\noindent\texttt{1 2 3 4 5  ...Sequencia de 5 terminou... 1 2 3 4 5 6 7 8 9 10  ...Sequencia de 10 terminou...}
+
+Agora façamos diferente, vamos usar a palavra-chave \texttt{go} para um das chamadas da funções:
 
 \begin{lstlisting}
 func main() {
-	go imprimir(5)
-	imprimir(10)
+	go sequencia(5)
+	sequencia(10)
 }
 \end{lstlisting}
 
-Logo a saida da função \texttt{main()} será: \texttt{5 10 5 10 5 10 5 10 5 10 5 10 5 10 5 10 5 10 5 10}. Notamos que já ocorreu uma diferença entre as saídas. A goroutine aberta para a função imprimir foi executada em paralelismo com a função principal. Isso torna o programa mais eficiente em recurços, diferentemente em outras linguagens como Ruby e Python que se utilizam de \textit{Green Threads} que precisão fazer rotinas com funções de sicronização em estruturadas para não ocorrer problemas na Thread principal. 
+Logo a saida da função \texttt{main()} será: 
 
+\noindent\texttt{1 1 2 2 3 3 4 4 5 5 6  ...Sequencia de 5 terminou... 7 8 9 10  ...Sequencia de 10 terminou...}. 
+
+Notamos que já ocorreu uma diferença entre as saídas. A goroutine aberta para a função imprimir foi executada em paralelismo com a função principal. Isso torna o programa mais eficiente em recurços, diferentemente em outras linguagens como Ruby e Python que se utilizam de \textit{Green Threads} que precisão fazer rotinas com funções de sicronização em estruturadas para não ocorrer problemas na Thread principal. 
 
 \subsection{Waitgroups}
+
+Usando o mesmo exemplo da subseção anterior, façamos o seguinte experimento: ao invés de acionar a \textit{goroutine} levando o valor 5 como argumento, iremos então inverter os valores das suas funções \texttt{sequencia()}, que agora contará com os valores 10 e 5, respectivamente. O escopo da função \texttt{main()} agora é este: 
+
+\begin{lstlisting}
+func main() {
+	go sequencia(10)
+	sequencia(5)
+}
+\end{lstlisting}
+
+Agora executando o código com os valores invertidos, temos: 
+
+\noindent\texttt{1 1 2 2 3 3 4 4 5 5  ...Sequencia de 5 terminou...}
+
+Analisando a saída, percebemos que o paralelismo houve até a rotina principal terminar. Isso quer dizer que não houve continuidade da \textit{goroutine} da função \texttt{imprimir(10)}. Este comportamento acontece porque Go entende que as \textit{goroutines} devem respeitar o tempo de execução da rotina principal, ou seja, o processo \texttt{main()}. Para o processo principal esperar o termino de todos os processos em paralelo, se faz necessário o uso de \textit{waitgroups}.
+
+Modificaremos o código adequando-o para \textit{waitgroups}. O primeiro passo deve ser adicionar o pacote \texttt{sync} dentro das importações para utilizarmos seus módulos. Devemos também instanciar uma variável global do tipo \texttt{sync.WaitGroup}. Faremos então \texttt{var group sync.WaitGroup}. Reescreveremos a função \texttt{main()} com o uso de \texttt{group} previamente instanciada. Fica dessa maneira:
+
+\begin{lstlisting}
+func main() {
+	group.Add(1)
+	go sequencia(10)
+	sequencia(5)
+	group.Wait()
+}
+\end{lstlisting}
+
+A função \texttt{group.Add()} especifica previamente quantos processos o programa deve esperar para poder ser finalizado. Ao final das chamadas das funções usamos o \texttt{group.Wait()}, que tem por finalidade permitir o processo principal esperar todas os processos do grupo terminarem sua execução. Também teremos algumas modificações na função \texttt{sequencia()}:
+
+\begin{lstlisting}
+func sequencia(n int) {
+	defer group.Done()
+	for i := 0; i < n; i++ {
+		fmt.Printf("%d ", i+1)
+		time.Sleep(200 * time.Millisecond)
+	}
+	fmt.Printf(" ...Sequencia de %d terminou... ", n)
+}
+\end{lstlisting}
+
+Fizemos o uso do \texttt{defer} (explicado na seção \ref{defer})) para assegurar que a função \texttt{group.Done()} seja executada ao fim da função \texttt{sequencia()}. Basicamente, \texttt{group\\.Done()} tem por finalidade "avisar" o processo principal que a atual rotina terminou e que o programa não precisa mais esperar por ela. Isso resolve o problema descrido no início desta subseção.
+
 \subsection{Channels}
+As goroutines se ultilizam de uma melhor abordagem em alta performance e melhor efciência no uso de recursos de processamento. Porém a capacidade de executar diferentes goroutines concorrentes pode ser uma cituação muito complicada porque geralmente irá se fazer a necessidade de fazer comunicações entre elas.
+
+Os channels são os responsaveis por abstrair essa comunicação, ou seja, eles abrem um canal para servir de ponte e conduzir as informações de qualquer tipagem em Go. A função \texttt{make()} é responsavel de criar um canal para trafegar os valores. Vamos ao seguinte exemplo com um tipo \texttt{int}. Depois Utilizamos o operador \texttt{<-} (arrow operator ou operador seta) para interagir com o cana criado. A seta permite a direção correta do fluxo da comunicação, vamos enviar valores \texttt{int} para o canal \texttt{ch}:
+
+\begin{lstlisting}
+ch := make(chan int)
+ch <- 33
+\end{lstlisting}
+
+
+Podemos obter o valor enviado para o canal c da sequinte forma:
+
+\begin{lstlisting}
+valor := <-c
+\end{lstlisting}
+
+A seguir está um exemplo mais completo para maior entendimento da real função dos channels:
+
+\begin{lstlisting}
+func main() {
+	ch := make(chan int)
+	go induzir(ch)
+	recebido := <-ch
+	fmt.Println(recebido)
+}
+
+func induzir(ch chan int) {
+	ch <- 33
+}
+\end{lstlisting}
+
+Notamos que inicialmente instaciamos um canal \texttt{ch} que conduz informações do tipo \texttt{int} e logo após passamos para esse canal um valor inteiro por meio do disparo da goroutine \texttt{induzir()}. Isso bloqueia qualquer outra operação com o mesmo canal até que a outra seja completada; permitindo uma propia sinronização automatica entre as goroutines sem mecanismos para travalas. A varivel \texttt{recebido :=} recebera o valor trafegado antes pela função texttt{induzir()}, que em seguida é iimpresso com valor e \texttt{33} no console.
+
 
 \section{Pacotes Go}
 \subsection{Criando um pacote Go}
