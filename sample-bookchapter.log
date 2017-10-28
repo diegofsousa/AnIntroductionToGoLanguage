@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2017.8.24)  16 OCT 2017 09:24
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2017.8.24)  28 OCT 2017 00:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -586,181 +586,212 @@ Underfull \hbox (badness 10000) in paragraph at lines 36--36
 LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <12> not available
 (Font)              Font shape `T1/ptm/b/it' tried instead on input line 38.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <13> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 57.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 47.
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 65.
-
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd
-File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
-)
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 67.
-LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 80
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 56.
+LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 70
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ztmcm.fd
 File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 80
+LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 70
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omlztmcm.fd
 File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 80
+LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 70
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsztmcm.fd
 File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 80
+LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 70
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omxztmcm.fd
 File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 80.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 70.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 80.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 70.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 80.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 70.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 80.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 70.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 80.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 70.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 80.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 70.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 80.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 70.
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 70.
 
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd
+File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
+)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [2]
-Overfull \hbox (6.15285pt too wide) in paragraph at lines 96--97
+Overfull \hbox (6.15285pt too wide) in paragraph at lines 86--87
 \T1/pcr/m/n/12 /etc/profile \T1/ptm/m/n/12 para fi-nalizar a in-sta-lação. O pr
 óx-imo passo é es-ten-der a pasta \T1/pcr/m/n/12 $GOPATH
  []
 
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 108.
-
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 98.
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 108.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 98.
  [3] [4]
 LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <12> not available
-(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 161.
+(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 151.
  [5]
-Underfull \hbox (badness 10000) in paragraph at lines 192--195
+Underfull \hbox (badness 10000) in paragraph at lines 182--185
 
  []
 
 
-Overfull \hbox (2.16776pt too wide) in paragraph at lines 222--223
-\T1/ptm/m/n/12 es-pe-cial-mente em ca-sos de Menus e es-tru-turas de de-cisões 
-com muitos opções. O \T1/pcr/m/n/12 switch
+Overfull \hbox (11.53307pt too wide) in paragraph at lines 186--187
+[]\T1/ptm/m/n/12 Para re-ce-ber uma en-trada de valor, o pa-cote \T1/pcr/m/n/12
+ fmt \T1/ptm/m/n/12 nos disponi-bi-liza a funcão \T1/pcr/m/n/12 Scan()\T1/ptm/m
+/n/12 .
  []
 
 [6] [7] [8]
-Overfull \hbox (5.20848pt too wide) in paragraph at lines 353--354
+Overfull \hbox (5.20848pt too wide) in paragraph at lines 344--345
 \T1/pcr/m/n/12 map[SEP:Sociedade Esportiva de Picos PEC:Piaui Esporte Clube
  []
 
-[9] [10] [11]
-Underfull \hbox (badness 10000) in paragraph at lines 498--500
+[9] [10] [11] [12]
+Underfull \hbox (badness 10000) in paragraph at lines 489--491
 
  []
 
-[12] [13] [14] [15]
-Overfull \hbox (9.34985pt too wide) in paragraph at lines 635--636
+[13] [14] [15]
+Overfull \hbox (9.34985pt too wide) in paragraph at lines 626--627
 []\T1/ptm/m/n/12 Na mesma seção do código em que se en-con-tra o \T1/pcr/m/n/12
  type TimeDoPiaui struct\T1/ptm/m/n/12 ,
  []
 
 [16]
-Overfull \hbox (1.86012pt too wide) in paragraph at lines 684--685
+Overfull \hbox (1.86012pt too wide) in paragraph at lines 675--676
 []\T1/ptm/m/n/12 Com essa es-tru-tura, pode-mos deixar a função \T1/pcr/m/n/12 
 main() \T1/ptm/m/n/12 mais limpa, as-sim deixando
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 700--711
+Underfull \hbox (badness 10000) in paragraph at lines 691--702
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 700--711
+Underfull \hbox (badness 10000) in paragraph at lines 691--702
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 700--711
+Underfull \hbox (badness 10000) in paragraph at lines 691--702
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 700--711
+Underfull \hbox (badness 10000) in paragraph at lines 691--702
 
  []
 
-[17] [18]
-Overfull \hbox (19.3045pt too wide) in paragraph at lines 775--777
-\T1/ptm/m/n/12 sem a ne-ces-si-dade de blo-quear prin-ci-pal uma de-las. A segu
-ir está uma função \T1/pcr/m/n/12 sequencia()
- []
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Overfull \hbox (12.40848pt too wide) in paragraph at lines 799--800
+ [17]
+[18]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [19]
+Overfull \hbox (12.40848pt too wide) in paragraph at lines 816--817
 \T1/pcr/m/n/12 1 2 3 4 5 ...Sequencia de 5 terminou... 1 2 3 4 5 6 7 8 9 10
  []
 
 
-Overfull \hbox (12.40848pt too wide) in paragraph at lines 812--813
+Overfull \hbox (12.40848pt too wide) in paragraph at lines 829--830
 \T1/pcr/m/n/12 1 1 2 2 3 3 4 4 5 5 6 ...Sequencia de 5 terminou... 7 8 9 10
  []
 
-[19]
-Overfull \hbox (13.37851pt too wide) in paragraph at lines 831--832
-\T1/ptm/m/n/12 mi-nar. Isso quer dizer que não houve con-tinuidade da \T1/ptm/m
-/it/12 gor-ou-tine \T1/ptm/m/n/12 da função \T1/pcr/m/n/12 imprimir(10)\T1/ptm/
-m/n/12 .
- []
-
 [20]
-Overfull \hbox (1.58264pt too wide) in paragraph at lines 857--858
-\T1/pcr/m/n/12 group.Done() \T1/ptm/m/n/12 seja ex-e-cu-tada ao fim da função \
-T1/pcr/m/n/12 sequencia()\T1/ptm/m/n/12 . Ba-si-ca-mente, \T1/pcr/m/n/12 group 
-
+Overfull \hbox (20.5785pt too wide) in paragraph at lines 848--849
+\T1/ptm/m/n/12 mi-nar. Isso quer dizer que não houve con-tinuidade da \T1/ptm/m
+/it/12 gor-ou-tine \T1/ptm/m/n/12 da função \T1/pcr/m/n/12 sequencia(10)\T1/ptm
+/m/n/12 .
  []
 
 [21]
-Underfull \hbox (badness 1237) in paragraph at lines 914--918
-[]\T1/ptm/m/n/12 Dyer, S., Mar-tin, J. and Zu-lauf, J. (1995) ``Mo-tion Cap-tur
-e White Pa-per'',
+Underfull \vbox (badness 4193) has occurred while \output is active []
+
+ [22]
+Overfull \hbox (1.60971pt too wide) in paragraph at lines 945--946
+[]\T1/ptm/m/n/12 Note que de-nom-i-namos o nome do pa-cote logo no in-í-cio com
+ o \T1/pcr/m/n/12 package opera 
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 927.
-[22]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 927.
+[23] [24]
+Overfull \hbox (5.21306pt too wide) in paragraph at lines 992--993
+[][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1006--1007
+\T1/ptm/m/n/12 https://medium.com/@gocodal/do-you-need-to-learn-googles-program
+ming-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1013--1015
+[]\T1/ptm/m/n/12 Marins, U. (2016) ``Por que uti-lizar Go/-Golang no seu back-e
+nd?'',
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1013--1015
+\T1/ptm/m/n/12 https://tableless.com.br/por-que-utilizar-gogolang-no-seu-backen
+d/, Out-ubro
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1016--1018
+[]\T1/ptm/m/n/12 Patel, K. (2017) ``Why should you learn Go?'',
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1016--1018
+\T1/ptm/m/n/12 https://medium.com/@kevalpatel2106/why-should-you-learn-go-f6076
+81fad65,
+ []
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1026.
+[25]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1026.
  (./sample-bookchapter.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 927.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 927.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1026.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1026.
+
 Package rerunfilecheck Info: File `sample-bookchapter.out' has not changed.
-(rerunfilecheck)             Checksum: 2A933E529BC054FA253CEE29B9DED132;2585.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 927.
+(rerunfilecheck)             Checksum: A688F3E0F42CB966F42A9A3370A1B770;2392.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1026.
  ) 
 Here is how much of TeX's memory you used:
- 8484 strings out of 494981
- 119830 string characters out of 6179614
- 208658 words of memory out of 5000000
- 11121 multiletter control sequences out of 15000+600000
+ 8557 strings out of 494981
+ 120828 string characters out of 6179614
+ 209747 words of memory out of 5000000
+ 11126 multiletter control sequences out of 15000+600000
  63510 words of font info for 89 fonts, out of 8000000 for 9000
  16 hyphenation exceptions out of 8191
  29i,8n,40p,784b,1777s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -771,10 +802,10 @@ type1/urw/courier/ucrro8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/ti
 mes/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb
 ></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/te
 xlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on sample-bookchapter.pdf (22 pages, 159484 bytes).
+Output written on sample-bookchapter.pdf (25 pages, 169185 bytes).
 PDF statistics:
- 805 PDF objects out of 1000 (max. 8388607)
- 766 compressed objects within 8 object streams
- 469 named destinations out of 1000 (max. 500000)
- 313 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 896 PDF objects out of 1000 (max. 8388607)
+ 853 compressed objects within 9 object streams
+ 537 named destinations out of 1000 (max. 500000)
+ 289 words of extra memory for PDF output out of 10000 (max. 10000000)
 
