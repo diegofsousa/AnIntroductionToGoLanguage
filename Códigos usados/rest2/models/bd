@@ -1,0 +1,17 @@
+post gres logs:
+
+postgres=# CREATE USER golang PASSWORD 'golang';
+CREATE ROLE
+postgres=# CREATE DATABASE gocrud OWNER golang;
+CREATE DATABASE
+postgres=# 
+
+postgres=# CREATE TABLE estudiantes{
+postgres-# ^C
+postgres=# CREATE TABLE estudiantes (
+postgres(# id SERIAL NOT NULL,
+postgres(# name VARCHAR(50) NOT NULL,
+postgres(# age SMALLINT NOT NULL,
+postgres(# active BOOLEAN NOT NULL,
+postgres(# created_at TIMESTAMP NOT NULL DEFAULT NOW(),
+postgres(# updated_at TIMESTAMP);
